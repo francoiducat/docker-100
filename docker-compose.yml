@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      args:
+      - http_proxy=http://gateway.zscaler.net:80
+      - https_proxy=http://gateway.zscaler.net:80
+    ports:
+     - "5000:5000"
+  redis:
+    image: "redis:alpine"
+
