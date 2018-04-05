@@ -17,10 +17,11 @@
             <div class="hero-unit">
                 <h1>Simple PHP App</h1>
                 <h2>Congratulations</h2>
+                <h3>You won !</h3>
                 <p>Your PHP application is now running on a container.</p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
                 <p><?php
-                    echo gethostname(); 
+                    echo gethostname();
                 ?></p>
 
             </div>
