@@ -1,1 +1,12 @@
 #Add your code here
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+        - "5000:5000"
+    links:
+        - "redis:redis"
+  redis:
+    image: "redis:alpine"
